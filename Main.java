@@ -12,6 +12,9 @@ public class Main {
         phone2.weight = 106;
 
         System.out.println("Номер первого телефона - " + phone1.getNumber());
+
+        System.out.println("Номер первого телефона - " + phone1.getNumber());
+
         System.out.println("Модель первого телефона - " + phone1.model);
         System.out.println("Вес первого телефона - " + phone1.weight);
 
