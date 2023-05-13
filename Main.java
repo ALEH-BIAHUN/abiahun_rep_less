@@ -14,10 +14,12 @@ public class Main {
         System.out.println("Номер первого телефона - " + phone1.getNumber());
         System.out.println("Модель первого телефона - " + phone1.model);
         System.out.println("Вес первого телефона - " + phone1.weight);
+        System.out.println();
 
         System.out.println("Номер второго телефона - " + phone2.getNumber());
         System.out.println("Модель второго телефона - " + phone2.model);
         System.out.println("Вес второго телефона - " + phone2.weight);
+        System.out.println();
 
         phone1.receiveCall("мама");  //вызываем метод receiveCall для объекта phone1
         phone2.receiveCall("папа");  //вызываем метод receiveCall для объекта phone2

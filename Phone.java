@@ -3,9 +3,15 @@ public class Phone {
     String model;
     int weight;
 
-    Phone(int num, String mod, int wei){
-        number = num;
-        model = mod;
+
+    // Phone(int num, String mod, int wei){
+    //    number = num;
+    //    model = mod;
+    //    weight = wei;
+    //  }
+
+    Phone(int num, String mod, int wei){ // Вызов из конструктора с тремя параметрами конструктор с двумя.
+        this(num, mod);
         weight = wei;
     }
 
@@ -21,6 +27,7 @@ public class Phone {
     void receiveCall(String name) {              //создали метод receiveCall
         System.out.println("Звонит " + name);
     } //добавили в класс Phone метод receiveCall
+
     int getNumber() {                           //создали метод getNumber (возвращает телефон)
         return number;
     }   //добавили в класс Phone метод getNumber, который возвращает number
