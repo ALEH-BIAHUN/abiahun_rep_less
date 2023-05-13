@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Phone {
     int number;
     String model;
@@ -27,5 +29,9 @@ public class Phone {
 
     int getNumber() {                           //создали метод getNumber (возвращает телефон)
         return number;                          //добавили в класс Phone метод getNumber, который возвращает number
+    }
+
+    void sendMessage(int... numbers) {                               //создали метод sendMessage с аргументами переменной длины
+        System.out.println("Отправить сообщение на "  + (number));   //выводим в консоль номера телефонов, на которые придут sms
     }
 }

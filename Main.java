@@ -24,5 +24,9 @@ public class Main {
         phone1.receiveCall("мама");  //вызываем метод receiveCall для объекта phone1
         phone2.receiveCall("папа");  //вызываем метод receiveCall для объекта phone2
         phone2.receiveCall("подружка", 5555555);  //вызываем метод receiveCall (перегруженный) для объекта phone2
+        System.out.println();
+
+        phone1.sendMessage();  //вызываем метод receiveCall для объекта phone1
+        phone2.sendMessage();  //вызываем метод receiveCall для объекта phone1
     }
 }
