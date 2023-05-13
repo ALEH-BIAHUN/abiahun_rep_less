@@ -4,24 +4,17 @@ public class Phone {
     int weight;
 
 
-    // Phone(int num, String mod, int wei){
-    //    number = num;
-    //    model = mod;
-    //    weight = wei;
-    //  }
-
-    Phone(int num, String mod, int wei){ // Вызов из конструктора с тремя параметрами конструктор с двумя.
-        this(num, mod);
-        weight = wei;
+    Phone(int number, String model, int weight){ // Вызов из конструктора с тремя параметрами конструктор с двумя.
+        this(number, model);
+        this.weight = weight;
     }
 
-    Phone(int num, String mod){
-        number = num;
-        model = mod;
+    Phone(int number, String model){
+        this.number = number;
+        this.model = model;
     }
 
     Phone(){
-
     }
 
     void receiveCall(String name) {              //создали метод receiveCall
